@@ -66,7 +66,7 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         
         st.image(
             "Imagen 1.png", 
-            caption="Retrato de Luca Pacioli (1494), considerado el padre de la contabilidad moderna.",
+            caption="Mujer que emprende y ordena desde inicio sus registros es exito seguro.",
             width=300
         )
         
