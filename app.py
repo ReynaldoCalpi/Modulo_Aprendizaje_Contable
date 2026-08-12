@@ -48,7 +48,7 @@ if choice == "🏠 Inicio":
     directa al grano y sin rodeos innecesarios.
     
     ### ¿Cómo funciona?
-    1. **La Píldora:** Historia, teoría esencial y conceptos clave explicados sin aburrir.
+    1. **La Píldora:** Historia, teoría esencial y los 20 conceptos clave explicados sin aburrir.
     2. **El Laboratorio:** Simuladores y clasificadores interactivos.
     3. **El Reto:** Cuestionarios prácticos para validar tu aprendizaje y desbloquear contenidos.
     
@@ -57,17 +57,16 @@ if choice == "🏠 Inicio":
 
 elif choice == "📚 Módulo 1: Contabilidad al Grano":
     st.title("Módulo 1: Fundamentos y Lógica Contable")
-    st.markdown("Comprende la contabilidad desde sus orígenes históricos hasta convertirse en el **GPS financiero** de cualquier empresa.")
+    st.markdown("Comprende la contabilidad desde sus orígenes históricos hasta dominar los **20 conceptos básicos fundamentales** de todo contador.")
     
-    tab1, tab2, tab3 = st.tabs(["📖 Historia y Conceptos", "🧮 Laboratorio: Clasificador", "❓ El Reto"])
+    tab1, tab2, tab3 = st.tabs(["📖 Historia y 20 Conceptos", "🧮 Laboratorio: Clasificador", "❓ El Reto"])
     
     with tab1:
         st.subheader("🏛️ Breve Historia y Bases de la Contabilidad")
         
-        # 🖼️ AQUÍ PUEDES COLOCAR UNA IMAGEN (Ej: Retrato de Luca Pacioli)
         st.image(
-            "Imagen 1.png", 
-            caption="Mujer Emprendedora",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg/800px-Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg", 
+            caption="Retrato de Luca Pacioli (1494), considerado el padre de la contabilidad moderna.",
             width=300
         )
         
@@ -77,21 +76,41 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         * **Los Inicios:** Las civilizaciones antiguas (sumerios y romanos) usaban tablillas y papiros para registrar cosechas, tributos e inventarios de mercancías.
         * **El gran hito (1494):** El fraile franciscano y matemático **Luca Pacioli** publicó el libro *Summa de arithmetica*, donde formalizó y documentó por primera vez el **Sistema de la Partida Doble** que usaban los mercaderes en Venecia. ¡La regla de oro de que *"no hay deudor sin acreedor"* nació ahí!
 
-        ### 2. Conceptos Clave que todo Contador debe Dominar
-        * **Entidad Económica:** El negocio y sus dueños son personas completamente separadas. Las finanzas de la empresa jamás se mezclan con los gastos personales.
-        * **Devengado vs. Percibido:** Los ingresos y gastos se registran **cuando ocurren** (cuando se emite la factura o se adquiere el compromiso), no necesariamente cuando se paga o se recibe el efectivo.
-        * **La Ecuación Contable:** El equilibrio matemático inquebrantable de todo negocio:
+        ### 2. Los 20 Conceptos Básicos que Todo Contador Debe Dominar
         """)
         
+        st.markdown("""
+        1. **Entidad Económica:** El negocio y sus dueños son personas completamente separadas. Las finanzas de la empresa jamás se mezclan con los gastos personales o familiares.
+        2. **Negocio en Marcha:** Se asume que la empresa continuará operando de forma indefinida en el futuro previsible, a menos que existan evidencias de lo contrario.
+        3. **Devengado:** Los ingresos y gastos se registran **cuando ocurren y se adquiere el compromiso comercial** (independientemente de si ya se pagó o se cobró en efectivo).
+        4. **Dualidad Económica (Partida Doble):** Toda transacción económica tiene un origen (de dónde viene el recurso) y una aplicación (en qué se usa o invierte).
+        5. **Moneda de Cuenta:** En el contexto de El Salvador, todas las operaciones financieras deben registrarse utilizando la moneda de curso legal oficial, el dólar estadounidense (USD).
+        6. **Período Contable:** El tiempo convencional (usualmente del 1 de enero al 31 de diciembre) en el que se mide el rendimiento financiero y el resultado de las operaciones.
+        7. **Sustancia Económica:** Las transacciones y eventos económicos deben registrarse de acuerdo con su realidad financiera y no solo por su forma legal.
+        8. **Asociación de Costos y Gastos con Ingresos:** Todos los costos y gastos de un período deben identificarse con los ingresos que generaron en ese mismo lapso.
+        9. **Valuación (Costo Histórico):** Los hechos económicos se registran originalmente a base de costos o valores de intercambio reales (históricos).
+        10. **Importancia Relativa (Materialidad):** Los errores o revelaciones de baja cuantía que no alteren la decisión del usuario no requieren tratamiento complejo.
+        11. **Prudencia (Conservatismo):** Ante la incertidumbre, se debe optar por registrar los activos y utilidades de manera moderada, pero anticipar las pérdidas o pasivos probables.
+        12. **Consistencia o Uniformidad:** Las políticas y métodos contables deben mantenerse estables a lo largo del tiempo para permitir comparabilidad financiera.
+        13. **Revelación Suficiente:** Los estados financieros deben incluir toda la información clara y necesaria para que los usuarios tomen decisiones informadas.
+        14. **Activo:** Recurso económico presente controlado por la entidad, derivado de sucesos pasados, del cual se espera obtener beneficios económicos.
+        15. **Pasivo:** Obligación presente de la entidad, surgida de sucesos pasados, cuya cancelación se espera que produzca una salida de recursos.
+        16. **Patrimonio Neto:** La parte residual de los activos de la entidad, una vez deducidos todos sus pasivos (capital de los dueños).
+        17. **Ingresos:** Incrementos en los beneficios económicos durante el período contable que aumentan el patrimonio (diferentes a los aportes de los socios).
+        18. **Gastos:** Decrementos en los beneficios económicos durante el período contable que disminuyen el patrimonio (diferentes a los retiros de los socios).
+        19. **Contabilidad Financiera:** Sistema orientado a proveer información histórica y general a usuarios externos (bancos, socios, inversionistas).
+        20. **Contabilidad Fiscal:** Sistema enfocado en el cumplimiento de las normativas de tributación y control ante las entidades de gobierno (como la DGII en El Salvador).
+        """)
+
+        st.markdown("### La Ecuación Contable Fundamental:")
         st.markdown(
             r"$$\text{Activo} = \text{Pasivo} + \text{Patrimonio}$$",
             unsafe_allow_html=True
         )
         
-        # 🎥 AQUÍ PUEDES COLOCAR UN VÍDEO DE YOUTUBE (Reemplaza el enlace por el que prefieras)
         st.markdown("---")
         st.markdown("### 🎥 Vídeo de apoyo:")
-        st.video("https://www.youtube.com/watch?v=H9gzvXdVerc")
+        st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
     with tab2:
         st.subheader("🧮 Laboratorio: Clasifica la Cuenta")
@@ -116,10 +135,10 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
 
     with tab3:
         st.subheader("Cuestionario de Validación - Módulo 1")
-        st.markdown("Demuestra que dominas los fundamentos para desbloquear el módulo de Ley Laboral.")
+        st.markdown("Demuestra que dominas los fundamentos ampliados para desbloquear el módulo de Ley Laboral.")
         
         answer = st.radio(
-            "Según los conceptos fundamentales de la contabilidad moderna, ¿a quién se le atribuye la formalización del método de la Partida Doble en 1494?",
+            "Según los conceptos fundamentales de la contabilidad moderna, ¿a qué se le atribuye la formalización del método de la Partida Doble en 1494?",
             (
                 "Adam Smith",
                 "Luca Pacioli",
@@ -160,7 +179,6 @@ elif choice == "💼 Módulo 2: Ley Laboral":
             
             salario_bruto = st.number_input("Salario Bruto Mensual ($)", min_value=0.0, value=650.0, step=25.0)
             
-            # Cálculos bajo ley salvadoreña
             afp = salario_bruto * 0.0725
             base_isss = min(salario_bruto, 1000.0)
             isss = base_isss * 0.03
