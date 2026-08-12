@@ -65,7 +65,7 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         st.subheader("🏛️ Breve Historia y Bases de la Contabilidad")
         
         st.image(
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg/800px-Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg", 
+            "Imagen 1.png", 
             caption="Retrato de Luca Pacioli (1494), considerado el padre de la contabilidad moderna.",
             width=300
         )
@@ -110,7 +110,7 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         
         st.markdown("---")
         st.markdown("### 🎥 Vídeo de apoyo:")
-        st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        st.video("https://www.youtube.com/watch?v=H9gzvXdVerc")
 
     with tab2:
         st.subheader("🧮 Laboratorio: Clasifica la Cuenta")
