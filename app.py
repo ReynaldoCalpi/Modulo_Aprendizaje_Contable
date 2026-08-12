@@ -45,10 +45,10 @@ if choice == "🏠 Inicio":
     st.title("Bienvenido a ContaGo SV 🚀")
     st.markdown("""
     Aprende contabilidad financiera, legislación laboral y fiscalidad de **El Salvador** de forma interactiva, 
-    directa al grano y sin rodeos teóricos innecesarios.
+    directa al grano y sin rodeos innecesarios.
     
     ### ¿Cómo funciona?
-    1. **La Píldora:** Conceptos clave explicados con casos reales del mercado salvadoreño.
+    1. **La Píldora:** Historia, teoría esencial y conceptos clave explicados sin aburrir.
     2. **El Laboratorio:** Simuladores y clasificadores interactivos.
     3. **El Reto:** Cuestionarios prácticos para validar tu aprendizaje y desbloquear contenidos.
     
@@ -57,37 +57,28 @@ if choice == "🏠 Inicio":
 
 elif choice == "📚 Módulo 1: Contabilidad al Grano":
     st.title("Módulo 1: Fundamentos y Lógica Contable")
-    st.markdown("Comprende la contabilidad no como una obligación aburrida, sino como el **GPS financiero** de cualquier emprendimiento o empresa en El Salvador.")
+    st.markdown("Comprende la contabilidad desde sus orígenes históricos hasta convertirse en el **GPS financiero** de cualquier empresa.")
     
-    tab1, tab2, tab3 = st.tabs(["📖 La Píldora y Caso Real", "🧮 Laboratorio: Clasificador", "❓ El Reto"])
+    tab1, tab2, tab3 = st.tabs(["📖 Historia y Conceptos", "🧮 Laboratorio: Clasificador", "❓ El Reto"])
     
     with tab1:
-        st.subheader("💡 ¿Qué es la Contabilidad en la práctica?")
+        st.subheader("🏛️ Breve Historia y Bases de la Contabilidad")
         st.markdown("""
-        Imagina que abres una ferretería en Apopa o una distribuidora en San Salvador. Necesitas saber:
-        * ¿Cuánto dinero tienes disponible?
-        * ¿Cuánto le debes a tus proveedores?
-        * ¿Estás ganando o perdiendo dinero al final del mes?
-        
-        La contabilidad es simplemente el sistema ordenado para **registrar, clasificar y resumir** todas estas operaciones en dinero.
+        ### 1. Un vistazo al pasado (De los mercaderes a Luca Pacioli)
+        La contabilidad nació por una necesidad humana básica: **llevar cuentas claras**.
+        * **Los Inicios:** Las civilizaciones antiguas (sumerios y romanos) usaban tablillas y papiros para registrar cosechas, tributos e inventarios de mercancías.
+        * **El gran hito (1494):** El fraile franciscano y matemático **Luca Pacioli** (considerado el *padre de la contabilidad*) publicó el libro *Summa de arithmetica*, donde formalizó y documentó por primera vez el **Sistema de la Partida Doble** que usaban los mercaderes en Venecia. ¡La regla de oro de que *"no hay deudor sin acreedor"* nació ahí!
+
+        ### 2. Conceptos Clave que todo Contador debe Dominar
+        * **Entidad Económica:** El negocio y sus dueños son personas completamente separadas. Las finanzas de la empresa jamás se mezclan con los gastos personales.
+        * **Devengado vs. Percibido:** Los ingresos y gastos se registran **cuando ocurren** (cuando se emite la factura o se adquiere el compromiso), no necesariamente cuando se paga o se recibe el efectivo.
+        * **La Ecuación Contable:** El equilibrio matemático inquebrantable de todo negocio:
         """)
         
-        st.info("🏢 **Caso de Estudio Real:** Don Carlos abre su tienda de repuestos con **$5,000.00** ahorrados en efectivo, compra mercadería por **$3,000.00** al crédito con un proveedor local, y además le pide un préstamo al banco por **$2,000.00**.")
-        
-        st.markdown("### Los 3 Pilares del Negocio de Don Carlos:")
-        col_a, col_b, col_c = st.columns(3)
-        with col_a:
-            st.metric(label="🟢 Activos (Lo que tiene)", value="$10,000.00", delta="Efectivo + Mercadería")
-        with col_b:
-            st.metric(label="🔴 Pasivos (Lo que debe)", value="$5,000.00", delta="Crédito + Préstamo")
-        with col_c:
-            st.metric(label="🔵 Patrimonio (Capital neto)", value="$5,000.00", delta="Aporte inicial")
-            
-        st.markdown("---")
-        st.markdown("""
-        **La Ecuación de Hierro:**
-        $$\\text{Activo} (\\$10,000) = \\text{Pasivo} (\\$5,000) + \\text{Patrimonio} (\\$5,000)$$
-        """)
+        st.markdown(
+            r"$$\text{Activo} = \text{Pasivo} + \text{Patrimonio}$$",
+            unsafe_allow_html=True
+        )
 
     with tab2:
         st.subheader("🧮 Laboratorio: Clasifica la Cuenta")
@@ -101,13 +92,13 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         if item_ejemplo == "Activo (Bien/Derecho)":
             st.success("¡Correcto! Un vehículo de reparto es un bien físico propiedad de la empresa, por lo tanto es un Activo.")
         elif item_ejemplo != "Selecciona una opción...":
-            st.error("Incorrecto. Piensa que el vehículo le pertenece a la empresa y le genera valor (es un bien).")
+            st.error("Incorrecto. Piensa que el vehículo le pertenece a la empresa y le genera valor económico (es un bien).")
             
         st.markdown("---")
-        st.markdown("### Tipos de Contabilidad que verás en El Salvador:")
+        st.markdown("### Tipos de Contabilidad aplicados en El Salvador:")
         st.markdown("""
-        1. **Contabilidad Financiera:** Para ver la salud del negocio y reportarla a socios o bancos.
-        2. **Contabilidad Fiscal (Tributaria):** Estrictamente enfocada en cumplir con las reglas del **Ministerio de Hacienda (DGII)**.
+        1. **Contabilidad Financiera:** Evalúa la salud general del negocio para socios, bancos y terceros.
+        2. **Contabilidad Fiscal (Tributaria):** Enfocada estrictamente en cumplir con las obligaciones formales y sustantivas ante el **Ministerio de Hacienda (DGII)**.
         """)
 
     with tab3:
@@ -115,23 +106,23 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         st.markdown("Demuestra que dominas los fundamentos para desbloquear el módulo de Ley Laboral.")
         
         answer = st.radio(
-            "Tomando como referencia el caso de Don Carlos, si una empresa adquiere una deuda con un proveedor por mercadería al crédito, ¿cómo se clasifica esa obligación?",
+            "Según los conceptos fundamentales de la contabilidad moderna, ¿a quién se le atribuye la formalización del método de la Partida Doble en 1494?",
             (
-                "Como un Activo, porque aumenta la mercadería.",
-                "Como un Pasivo, porque representa una deuda u obligación con un tercero.",
-                "Como Patrimonio, porque incrementa el capital de los dueños."
+                "Adam Smith",
+                "Luca Pacioli",
+                "El Ministerio de Hacienda"
             ),
             index=None
         )
         
         if st.button("Validar Respuesta Módulo 1"):
-            if answer == "Como un Pasivo, porque representa una deuda u obligación con un tercero.":
-                st.success("¡Excelente! Has comprendido perfectamente la diferencia entre bienes, deudas y capital. ¡Módulo 1 superado y desbloqueado!")
+            if answer == "Luca Pacioli":
+                st.success("¡Excelente! Luca Pacioli sentó las bases de la contabilidad moderna. ¡Módulo 1 superado y desbloqueado!")
                 st.session_state.module_1_passed = True
             elif answer is None:
                 st.warning("Por favor, selecciona una opción antes de validar.")
             else:
-                st.error("Incorrecto. Recuerda que todo lo que la empresa *debe* a terceras personas (proveedores, bancos) se cataloga estrictamente como Pasivo.")
+                st.error("Incorrecto. Recuerda que el fraile franciscano Luca Pacioli es considerado el padre de la contabilidad.")
 
 elif choice == "💼 Módulo 2: Ley Laboral":
     st.title("Módulo 2: Ley Laboral y Planillas (El Salvador)")
