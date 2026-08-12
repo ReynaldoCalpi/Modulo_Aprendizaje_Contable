@@ -67,7 +67,7 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
         # 🖼️ AQUÍ PUEDES COLOCAR UNA IMAGEN (Ej: Retrato de Luca Pacioli)
         st.image(
             "Imagen 1.png", 
-            caption="Retrato de Luca Pacioli (1494), considerado el padre de la contabilidad moderna.",
+            caption="Mujer Emprendedora",
             width=300
         )
         
