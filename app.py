@@ -63,11 +63,19 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
     
     with tab1:
         st.subheader("🏛️ Breve Historia y Bases de la Contabilidad")
+        
+        # 🖼️ AQUÍ PUEDES COLOCAR UNA IMAGEN (Ej: Retrato de Luca Pacioli)
+        st.image(
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg/800px-Luca_Pacioli_by_Jacopo_de%27_Barbari.jpg", 
+            caption="Retrato de Luca Pacioli (1494), considerado el padre de la contabilidad moderna.",
+            width=300
+        )
+        
         st.markdown("""
         ### 1. Un vistazo al pasado (De los mercaderes a Luca Pacioli)
         La contabilidad nació por una necesidad humana básica: **llevar cuentas claras**.
         * **Los Inicios:** Las civilizaciones antiguas (sumerios y romanos) usaban tablillas y papiros para registrar cosechas, tributos e inventarios de mercancías.
-        * **El gran hito (1494):** El fraile franciscano y matemático **Luca Pacioli** (considerado el *padre de la contabilidad*) publicó el libro *Summa de arithmetica*, donde formalizó y documentó por primera vez el **Sistema de la Partida Doble** que usaban los mercaderes en Venecia. ¡La regla de oro de que *"no hay deudor sin acreedor"* nació ahí!
+        * **El gran hito (1494):** El fraile franciscano y matemático **Luca Pacioli** publicó el libro *Summa de arithmetica*, donde formalizó y documentó por primera vez el **Sistema de la Partida Doble** que usaban los mercaderes en Venecia. ¡La regla de oro de que *"no hay deudor sin acreedor"* nació ahí!
 
         ### 2. Conceptos Clave que todo Contador debe Dominar
         * **Entidad Económica:** El negocio y sus dueños son personas completamente separadas. Las finanzas de la empresa jamás se mezclan con los gastos personales.
@@ -79,6 +87,11 @@ elif choice == "📚 Módulo 1: Contabilidad al Grano":
             r"$$\text{Activo} = \text{Pasivo} + \text{Patrimonio}$$",
             unsafe_allow_html=True
         )
+        
+        # 🎥 AQUÍ PUEDES COLOCAR UN VÍDEO DE YOUTUBE (Reemplaza el enlace por el que prefieras)
+        st.markdown("---")
+        st.markdown("### 🎥 Vídeo de apoyo:")
+        st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
     with tab2:
         st.subheader("🧮 Laboratorio: Clasifica la Cuenta")
